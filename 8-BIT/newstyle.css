@@ -1,0 +1,128 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    font-family: "Orbitron", sans-serif;
+}
+
+body::-webkit-scrollbar{
+    width: 0;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.background{
+    background-image: url(./bit_image/background_rocket.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 50%;
+    min-height: 100%;
+}
+
+.quadrado{
+    padding-top: 50px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 50px;
+    width: 50%;
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.quadrado img{
+    width: 400px;
+    height: 105px;
+    margin-bottom: 30px;
+}
+
+.quadrado p{
+    margin-bottom: 30px;
+}
+
+.quadrado h1{
+    text-align: center;
+}
+
+.quadrado form{
+    width: 100%;
+    max-width: 389px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.quadrado form div{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.quadrado form div img{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 5px;
+    right: 0;
+    cursor: pointer;
+}
+
+.font{
+    font-family: "Orbitron", sans-serif;
+    margin-bottom: 20px;
+    padding-right: 15px !important;
+}
+
+.quadrado form input{
+    height: 50px;
+    font-size: 20px;
+    padding-left: 13px;
+    padding-right: 64px;
+}
+
+#botao {
+    all: unset;
+    height: 60px;
+    color: aliceblue;
+    font-size: larger;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 4px;
+    background-image: url(./bit_image/city_bit.jpg);
+    background-size: cover;
+    background-position: top; 
+    background-repeat: no-repeat; 
+    cursor: pointer;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#botao:hover {
+    background-image: url(./bit_image/bitcity_light.avif);
+    color: yellow;
+    transition: 0.7s;
+}
+
+@media(max-width: 840px){
+    .background{
+        display: none;
+    }
+
+    .quadrado{
+        width: 100%;
+    }
+}

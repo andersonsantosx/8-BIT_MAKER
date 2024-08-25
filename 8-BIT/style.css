@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+    font-size: 16px;
+}
+
+body {
+    font-size: 16px;
+    overflow: hidden;
+    background-color:pink;
+}
+
+#company {
+     max-height: 120px;
+    position: relative;
+    left: 5%;
+    padding-top: 10px;
+} 
+
+#meio {
+    
+    padding: 2% 5%
+}
+
+.headline {
+    max-width: 400px;
+    padding: 1%;
+    padding-right: 100px;
+    
+}
+
+form input {
+    width: 25%;
+    background: white;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding: 16px 10px;
+}
+
+form .input-wtapper + .input-wtapper {
+ margin-top: 16px;
+
+}
+#Forgot {
+    padding-right: 11%;
+}
+
+#pao {
+    padding-bottom: 16px;
+}
+
+#botao {
+    all: unset;
+    color: aliceblue;
+    font-size: larger;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 4px;
+    background-image: url(./bit_image/city_bit.jpg);
+    background-size: cover;
+    background-position: top; 
+    background-repeat: no-repeat; 
+    padding: 14px 10%;  
+    margin-block: 32px;  
+    
+}
+#inbotao {
+    padding-left: 15px;
+}
+
+#botao:hover {
+    background-image: url(./bit_image/bitcity_light.avif);
+    transition: 3s;
+    
+}
+
+#foguete {
+    position: absolute;
+    right: 0; 
+    width: 60%; 
+    height: 100%;
+    top: 0;
+    contain: content;
+}
